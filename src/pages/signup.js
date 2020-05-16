@@ -1,7 +1,7 @@
 import React from "react";
 import {useSignUpPageStyles} from "../styles";
 import SEO from "../components/shared/Seo";
-import {Card, CardHeader, TextField} from "@material-ui/core";
+import {Card, TextField} from "@material-ui/core";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import {Link} from "react-router-dom";
@@ -46,23 +46,23 @@ function SignUpPage() {
                                 margin={'dense'}
                                 className={classes.textField}
                             />
-                          <TextField
-                              fullWidth
-                              variant={'filled'}
-                              label={'Username'}
-                              margin={'dense'}
-                              className={classes.textField}
-                              autoComplete={'username'}
-                          />
-                          <TextField
-                              fullWidth
-                              variant={'filled'}
-                              label={'Password'}
-                              type={'password'}
-                              margin={'dense'}
-                              className={classes.textField}
-                              autoComplete={'new-password'}
-                          />
+                            <TextField
+                                fullWidth
+                                variant={'filled'}
+                                label={'Username'}
+                                margin={'dense'}
+                                className={classes.textField}
+                                autoComplete={'username'}
+                            />
+                            <TextField
+                                fullWidth
+                                variant={'filled'}
+                                label={'Password'}
+                                type={'password'}
+                                margin={'dense'}
+                                className={classes.textField}
+                                autoComplete={'new-password'}
+                            />
                             <Button
                                 variant={'contained'}
                                 fullWidth
