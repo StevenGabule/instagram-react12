@@ -2,19 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62b0c73e-18c6-4d1a-89cc-cb95a4a5847b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/John_paul.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/John_paul.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/John_paul.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/feed/FeedPost.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/feed/FeedPost.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/feed/FeedSideSuggestions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/feed/FeedSideSuggestions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/shared/FollowButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/FollowButton.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/shared/LoadingScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/LoadingScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/shared/UserCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/UserCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/feed.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/feed.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/signup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/notification/NotificationList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/notification/NotificationList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/notification/NotificationTooltip.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/notification/NotificationTooltip.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/shared/Layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/Layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/shared/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/explore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/explore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/not-found.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/not-found.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -92,7 +88,8 @@
       <workItem from="1589437568398" duration="8495000" />
       <workItem from="1589507574641" duration="2650000" />
       <workItem from="1589596532828" duration="338000" />
-      <workItem from="1589597049888" duration="8151000" />
+      <workItem from="1589597049888" duration="9426000" />
+      <workItem from="1589703088637" duration="7157000" />
     </task>
     <servers />
   </component>
