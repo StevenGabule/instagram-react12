@@ -5,18 +5,27 @@ import {CommentIcon, LikeIcon, MoreIcon, RemoveIcon, SaveIcon, ShareIcon, Unlike
 import {Link} from "react-router-dom";
 import HTMLEllipsis from 'react-lines-ellipsis/lib/html'
 import {Typography, Button, Hidden, TextField, Divider} from "@material-ui/core";
+import FollowSuggestions from "../shared/FollowSuggestions";
+import OptionsDialog from "../shared/OptionsDialog";
 
-function FeedPost({post}) {
+function FeedPost({post, index}) {
     const classes = useFeedPostStyles();
     const [showCaption, setCaption] = useState(false);
+    const [showOptionsDialog, setOptionsDialog] = useState(false);
     const {media, id, likes, user, caption, comments} = post;
+    const showFollowSuggestions = index === 1;
+
     return (
         <>
-            <article className={classes.article}>
+            <article className={classes.article} style={{
+                marginBottom: showFollowSuggestions && 30
+            }}>
                 {/* Feed Post Header */}
                 <div className={classes.postHeader}>
                     <UserCard user={user}/>
-                    <MoreIcon className={classes.moreIcon}/>
+                    <MoreIcon
+                        onClick={() => setOptionsDialog(true)}
+                        className={classes.moreIcon}/>
                 </div>
                 {/*Feed Post Image*/}
                 <div>
@@ -33,7 +42,7 @@ function FeedPost({post}) {
                         <SaveButton/>
                     </div>
                     <Typography
-                        className={classes.like}
+                        className={classes.likes}
                         variant={"subtitle2"}
                         component={"span"}
                     >
@@ -102,6 +111,8 @@ function FeedPost({post}) {
                     <Comment/>
                 </Hidden>
             </article>
+            {showFollowSuggestions && <FollowSuggestions/>}
+            {showOptionsDialog && <OptionsDialog onClose={() => setOptionsDialog(false)} />}
         </>
     );
 }

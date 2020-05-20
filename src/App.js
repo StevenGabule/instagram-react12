@@ -1,5 +1,5 @@
-import React from "react";
-import {Route,BrowserRouter as Router, Switch} from "react-router-dom";
+import React, {useEffect, useRef} from "react";
+import {Route, Switch, useHistory, useLocation} from "react-router-dom";
 import FeedPage from "./pages/feed";
 import ExplorePage from "./pages/explore";
 import ProfilePage from "./pages/profile";
@@ -8,21 +8,36 @@ import EditProfilePage from "./pages/edit-profile";
 import LoginPage from "./pages/login";
 import SignUpPage from "./pages/signup";
 import NotFoundPage from "./pages/not-found";
+import PostModal from "./components/post/PostModal";
 
 function App() {
+    const history = useHistory();
+    const location = useLocation();
+    const prevLocation = useRef(location);
+    const modal = location.state?.modal;
+
+    useEffect(() => {
+        if (history.action !== 'POP' && !modal) {
+            prevLocation.current = location;
+        }
+    }, [location, modal, history.action]);
+
+    const isModalOpen = modal && prevLocation.current !== location;
+
     return (
-        <Router>
-          <Switch>
-            <Route exact path={"/"} component={FeedPage} />
-            <Route path={"/explore"} component={ExplorePage} />
-            <Route exact path={"/:username"} component={ProfilePage} />
-            <Route exact path={"/p/:postId"} component={PostPage} />
-            <Route path={"/accounts/edit"} component={EditProfilePage} />
-            <Route path={"/accounts/login"} component={LoginPage} />
-            <Route path={"/accounts/emailsignup"} component={SignUpPage} />
-            <Route path={"*"} component={NotFoundPage} />
-          </Switch>
-        </Router>
+        <>
+            <Switch location={isModalOpen ? prevLocation.current : location}>
+                <Route exact path={"/"} component={FeedPage}/>
+                <Route path={"/explore"} component={ExplorePage}/>
+                <Route exact path={"/:username"} component={ProfilePage}/>
+                <Route exact path={"/p/:postId"} component={PostPage}/>
+                <Route path={"/accounts/edit"} component={EditProfilePage}/>
+                <Route path={"/accounts/login"} component={LoginPage}/>
+                <Route path={"/accounts/emailsignup"} component={SignUpPage}/>
+                <Route path={"*"} component={NotFoundPage}/>
+            </Switch>
+            {isModalOpen && <Route exact path={'/p/:postId'} component={PostModal} />}
+        </>
     );
 }
 

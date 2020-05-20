@@ -1,10 +1,43 @@
 import React from "react";
-import { useOptionsDialogStyles } from "../../styles";
+import {useOptionsDialogStyles} from "../../styles";
+import {Dialog, Zoom} from "@material-ui/core";
+import Button from "@material-ui/core/Button";
+import Divider from "@material-ui/core/Divider";
+import {Link} from "react-router-dom";
+import {defaultPost} from "../../data";
 
-function OptionsDialog() {
-  useOptionsDialogStyles();
-
-  return <div>OptionsDialog</div>;
+function OptionsDialog({onClose}) {
+    const classes = useOptionsDialogStyles();
+    return (
+        <Dialog
+            open
+            classes={{scrollPaper: classes.dialogScrollPaper}}
+            onClose={onClose}
+            TransitionComponent={Zoom}
+        >
+          <Button className={classes.redButton}>
+            Unfollow
+          </Button>
+          <Divider />
+          <Button className={classes.redButton}>
+            <Link to={`/p/${defaultPost.id}`}>
+              Go to post
+            </Link>
+          </Button>
+          <Divider />
+          <Button className={classes.button}>
+            Share
+          </Button>
+          <Divider />
+          <Button className={classes.button}>
+            Copy Link
+          </Button>
+          <Divider />
+          <Button onClick={onClose} className={classes.button}>
+            Cancel
+          </Button>
+        </Dialog>
+    )
 }
 
 export default OptionsDialog;

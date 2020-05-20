@@ -2,15 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62b0c73e-18c6-4d1a-89cc-cb95a4a5847b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/John_paul.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/John_paul.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/notification/NotificationList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/notification/NotificationList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/notification/NotificationTooltip.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/notification/NotificationTooltip.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/shared/Layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/Layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/shared/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/explore/ExploreGrid.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/explore/ExploreGrid.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/explore/ExploreSuggestions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/explore/ExploreSuggestions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/feed/FeedPost.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/feed/FeedPost.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/post/MorePostsFromUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/post/MorePostsFromUser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/post/Post.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/post/Post.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/post/PostModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/post/PostModal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/shared/FollowSuggestions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/FollowSuggestions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/shared/GridPost.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/GridPost.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/shared/OptionsDialog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/OptionsDialog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/explore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/explore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/not-found.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/not-found.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/feed.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/feed.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/post.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/post.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -89,7 +96,8 @@
       <workItem from="1589507574641" duration="2650000" />
       <workItem from="1589596532828" duration="338000" />
       <workItem from="1589597049888" duration="9426000" />
-      <workItem from="1589703088637" duration="7157000" />
+      <workItem from="1589703088637" duration="7879000" />
+      <workItem from="1589949833304" duration="6098000" />
     </task>
     <servers />
   </component>

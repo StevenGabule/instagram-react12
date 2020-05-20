@@ -26,7 +26,7 @@ export const defaultPost = {
   caption: `<span class="">Do you know the 10 JavaScript concepts you need to learn React? 🤔⚛️👇<br>•<br>•<br>👉 Get the FREE cheatsheet to learn them now: bit.ly/10-js-tips 🔥</span>`,
   user: defaultUser,
   media:
-    "https://images.unsplash.com/photo-1571142191114-feec5c22f686?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1868&q=80",
+    "https://images.unsplash.com/photo-1589877929074-9dd46c7e8cca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
   comments: [],
   created_at: "2020-02-28T03:08:14.522421+00:00"
 };
@@ -38,7 +38,7 @@ export function getDefaultPost() {
     caption: `<span class="">Do you know the 10 JavaScript concepts you need to learn React? 🤔⚛️👇<br>•<br>•<br>👉 Get the FREE cheatsheet to learn them now: bit.ly/10-js-tips 🔥</span>`,
     user: defaultUser,
     media:
-      "https://images.unsplash.com/photo-1571142191114-feec5c22f686?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1868&q=80",
+      "https://images.unsplash.com/photo-1589877929074-9dd46c7e8cca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
     comments: [],
     created_at: "2020-02-28T03:08:14.522421+00:00"
   };
