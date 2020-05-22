@@ -3,16 +3,19 @@ import {usePostStyles} from "../../styles";
 import UserCard from "../shared/UserCard";
 import {CommentIcon, LikeIcon, MoreIcon, RemoveIcon, SaveIcon, ShareIcon, UnlikeIcon} from "../../icons";
 import {Link} from "react-router-dom";
-import HTMLEllipsis from 'react-lines-ellipsis/lib/html'
 import {Typography, Button, Hidden, TextField, Divider} from "@material-ui/core";
-import FollowSuggestions from "../shared/FollowSuggestions";
 import OptionsDialog from "../shared/OptionsDialog";
 import {defaultPost} from "../../data";
+import PostSkeleton from "./PostSkeleton";
 
 function Post() {
     const classes = usePostStyles();
+    const [loading, setLoading] = useState(true);
     const [showOptionsDialog, setOptionsDialog] = useState(false);
     const {media, id, likes, user, caption, comments} = defaultPost;
+
+    setTimeout(() => setLoading(false), 2000);
+    if (loading) return <PostSkeleton/>;
 
     return (
         <div className={classes.postContainer}>
